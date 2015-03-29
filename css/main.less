@@ -18,3 +18,27 @@ body{
 .logo{
 	width: 40%;
 }
+.main_image{
+	position:relative;
+	overflow: hidden;
+	width:300px;
+	a.main_img{
+		position: absolute;
+		width: 300px;
+		display: block;
+		z-index: 10;
+		background: url("../img/2.jpg") center top;
+		:hover{
+			background-position: center -300px;
+			z-index: 0;
+		}
+	}
+	.slide{
+		z-index: 0;
+		visibility: visible;
+		.active{
+			
+			width:100%;
+		}
+	}
+}
